@@ -1,5 +1,7 @@
 # mcp-server-tester
 
+[![AI DevOps Actions Suite](https://img.shields.io/badge/AI%20DevOps%20Actions-Suite-blue?logo=github)](https://github.com/ollieb89/ai-devops-actions)
+
 [![CI](https://github.com/ollieb89/mcp-server-tester/actions/workflows/ci.yml/badge.svg)](https://github.com/ollieb89/mcp-server-tester/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/mcp-server-tester)](https://www.npmjs.com/package/mcp-server-tester)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
