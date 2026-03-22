@@ -208,3 +208,19 @@ npm test
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+
+---
+## Part of the AI DevOps Actions suite
+
+This action is one of five tools that form the **[AI DevOps Actions](https://github.com/ollieb89/ai-devops-actions)** suite — the CI/CD layer for AI-native development.
+
+| Action | Purpose |
+|--------|---------|
+| [ai-pr-guardian](https://github.com/ollieb89/ai-pr-guardian) | Gate low-quality and AI-generated PRs |
+| [llm-cost-tracker](https://github.com/ollieb89/llm-cost-tracker) | Track AI API costs in CI, alert on overruns |
+| [mcp-server-tester](https://github.com/ollieb89/mcp-server-tester) | Validate MCP servers: health, compliance, discovery |
+| [actions-lockfile-generator](https://github.com/ollieb89/actions-lockfile-generator) | Pin Actions to SHA, prevent supply chain attacks |
+| [agent-skill-validator](https://github.com/ollieb89/agent-skill-validator) | Lint and validate agent skill repos |
+
+→ [View the full suite and pipeline example](https://github.com/ollieb89/ai-devops-actions)
