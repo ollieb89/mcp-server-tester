@@ -1,5 +1,5 @@
 {
-  "name": "mcp-server-tester",
+  "name": "@ollieb89/mcp-server-tester",
   "version": "1.0.0",
   "description": "GitHub Action + CLI to test MCP servers in CI: health checks, schema validation, tool/resource discovery, protocol compliance",
   "main": "dist/index.js",
