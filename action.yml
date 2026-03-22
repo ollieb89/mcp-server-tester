@@ -1,0 +1,56 @@
+name: 'mcp-server-tester'
+description: 'Test MCP servers in CI: health checks, schema validation, tool/resource/prompt discovery, protocol compliance'
+author: 'ollieb89'
+
+branding:
+  icon: 'check-circle'
+  color: 'purple'
+
+inputs:
+  transport:
+    description: 'Transport type: stdio | http | sse'
+    required: false
+    default: 'stdio'
+  server-command:
+    description: 'Command to start the MCP server (stdio transport)'
+    required: false
+  server-url:
+    description: 'URL of the MCP server endpoint (http/sse transport)'
+    required: false
+  test-tools:
+    description: 'Run tool discovery and schema validation'
+    required: false
+    default: 'true'
+  test-resources:
+    description: 'Run resource discovery and validation'
+    required: false
+    default: 'true'
+  test-prompts:
+    description: 'Run prompt discovery and validation'
+    required: false
+    default: 'true'
+  fail-on:
+    description: 'When to fail the Action: errors | warnings | none'
+    required: false
+    default: 'errors'
+  timeout:
+    description: 'Timeout in seconds for server connection'
+    required: false
+    default: '30'
+  output-file:
+    description: 'Path to write JSON test report artifact'
+    required: false
+
+outputs:
+  passed:
+    description: 'Number of checks that passed'
+  failed:
+    description: 'Number of checks that failed'
+  warnings:
+    description: 'Number of checks with warnings'
+  report-path:
+    description: 'Path to the JSON report artifact'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
